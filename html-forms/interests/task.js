@@ -16,6 +16,7 @@ const checkedParent = (element) => {
       target.indeterminate = false;
       target.checked = false;
     } else {
+      target.checked = false;
       target.indeterminate = true;
     }
 
