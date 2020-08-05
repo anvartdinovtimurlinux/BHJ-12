@@ -21,7 +21,7 @@ const sendMessage = (text, isBot=true) => {
   const date = new Date();
   messages.innerHTML += `
     <div class="message ${isBot ? '' : 'message_client'}">
-      <div class="message__time">${date.getHours()}:${date.getMinutes()}</div>
+      <div class="message__time">${date.toTimeString().slice(0, 5)}</div>
       <div class="message__text">
         ${text}
       </div>
