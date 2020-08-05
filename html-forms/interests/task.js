@@ -39,9 +39,6 @@ interests.addEventListener('change', event => {
       children.checked = false;
     }
   });
-  // console.log(target)
+  
   checkedParent(target);
 });
-
-
-// children.indeterminate = true;
