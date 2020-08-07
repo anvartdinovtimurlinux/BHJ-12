@@ -7,12 +7,34 @@ body {
   align-items: center;
 }
 
+.cart-empty {
+  display: none;
+}
+
 .cart__product {
   position: relative;
 }
-.cart__product-count {
+
+.cart__product-control {
+  display: flex;
+  justify-content: space-between;
+
+  width: 90%;
+
   position: absolute;
   top: 0;
+}
+
+.cart__product-remove {
+  color: red;
+  font-size: 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cart__product-count {
+  /* position: absolute; */
+  /* top: 0; */
   right: 0;
   border: 2px solid green;
   border-radius: 50%;
@@ -89,3 +111,4 @@ body {
 .product-shadow {
   position: absolute;
 }
+
