@@ -15,6 +15,7 @@ const addTask = (text) => {
       ${text}
     </div>
     <a href="#" class="task__remove">&times;</a>`;
+
   taskList.append(task);
   tasks.push(text);
 
@@ -41,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 newTaskText.addEventListener('keydown', (event) => {
   if (event.keyCode === 13 && newTaskText.value) {
+    event.preventDefault()
     addTask(newTaskText.value)
   }
 });
@@ -48,6 +50,7 @@ newTaskText.addEventListener('keydown', (event) => {
 
 newTaskBtn.addEventListener('click', (event) => {
   if (newTaskText.value) {
+    event.preventDefault()
     addTask(newTaskText.value)
   }
 });
