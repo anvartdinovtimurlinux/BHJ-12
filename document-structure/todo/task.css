@@ -1,5 +1,8 @@
 body {
   font-family: Arial;
+  max-width: 720px;
+  margin: auto;
+  padding-top: 20px;
 }
 
 .tasks__control {
