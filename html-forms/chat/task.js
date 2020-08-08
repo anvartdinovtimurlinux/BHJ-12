@@ -26,7 +26,9 @@ const sendMessage = (text, isBot=true) => {
         ${text}
       </div>
     </div>`;
-  chatContainer.scroll(0, chatContainer.getBoundingClientRect().bottom);
+
+  const innerContainer = document.querySelector('.chat-widget__messages');
+  chatContainer.scrollTo(0, parseInt(getComputedStyle(innerContainer).height));
 }
 
 let timeDelay;
